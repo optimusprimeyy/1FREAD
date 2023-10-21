@@ -32,9 +32,9 @@ def getDist(Data, attribute_list, category):
         if len(numerical) == length:    # All numerical attributes.
             return pairwise_distances(Data, metric="euclidean")
         elif len(nominal) == length:    # All nominal attributes.
-            return pairwise_distances(Data, metric="hamming")
+            return pairwise_distances(Data, metric="hamming") * len(nominal)
         else:                           # hybrid attributes
-            dis_nominal = pairwise_distances(nomi_data, metric="hamming")
+            dis_nominal = pairwise_distances(nomi_data, metric="hamming") * len(nominal)
             dis_numerical = pairwise_distances(num_data, metric="euclidean")
             return dis_nominal + dis_numerical
 
