@@ -3,9 +3,9 @@
 import numpy as np
 from scipy.io import loadmat
 from sklearn.metrics.pairwise import pairwise_distances
-import time
-
 from sklearn.preprocessing import MinMaxScaler
+import time
+np.seterr(divide='ignore',invalid='ignore')
 
 
 def getDist(Data, attribute_list, category):
