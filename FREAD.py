@@ -1,8 +1,12 @@
 # Fuzzy Rough Entropy-based Anomaly Detection (FREAD) algorithm
 
 import numpy as np
+from scipy.io import loadmat
 from sklearn.metrics.pairwise import pairwise_distances
 import time
+
+from sklearn.preprocessing import MinMaxScaler
+
 
 def getDist(Data, attribute_list, category):
     # input:
@@ -126,3 +130,13 @@ def FREAD(data, delta):
     end_time = time.time()
     print('time consume:', end_time - start_time, 's')
     return score
+
+if __name__ == "__main__":
+    load_data = loadmat('FREAD_Example.mat')
+    trandata = load_data['trandata']
+    scaler = MinMaxScaler()
+    trandata[:, 1:] = scaler.fit_transform(trandata[:, 1:])
+
+    delta = 0.5
+    out_scores = FREAD(trandata, delta)
+    print(out_scores)
