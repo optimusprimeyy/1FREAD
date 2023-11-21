@@ -21,7 +21,7 @@ if __name__ == "__main__":
 ```
 You can get outputs as follows:
 ```
-anomaly_score =
+out_scores =
     0.8621
     0.9448
     0.8373
