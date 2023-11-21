@@ -7,30 +7,24 @@ Anomaly detection has been used in a wide range of fields. However, most of the 
 ## Usage
 You can run FREAD.py:
 ```
-clc;
-clear all;
-format short
+if __name__ == "__main__":
+    load_data = loadmat('FREAD_Example.mat')
+    trandata = load_data['trandata']
 
-load Example.mat
+    scaler = MinMaxScaler()
+    trandata[:, 1:] = scaler.fit_transform(trandata[:, 1:])
 
-Dataori=Example;
+    delta = 0.5
+    out_scores = FREAD(trandata, delta)
 
-trandata=Dataori;
-trandata=normalize(trandata,'range');
-
-sigma=0.6;
-anomaly_score=FGAS(trandata,sigma)
-
+    print(out_scores)
 ```
 You can get outputs as follows:
 ```
 anomaly_score =
-    0.1390
-    0.0539
-    0.3785
-    0.0011
-    0.3655
-         0
-    0.4530
-    1.0000
-    0.13
+    0.8621
+    0.9448
+    0.8373
+    0.8630
+    0.8090
+    0.8945
