@@ -28,6 +28,7 @@ out_scores =
     0.8630
     0.8090
     0.8945
+```
 
 ## Citation
 If you find FREAD useful in your research, please consider citing:
