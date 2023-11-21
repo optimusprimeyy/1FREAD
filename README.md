@@ -28,3 +28,19 @@ out_scores =
     0.8630
     0.8090
     0.8945
+
+## Citation
+If you find FREAD useful in your research, please consider citing:
+```
+@article{WANG2023109087,
+    title = {Exploiting fuzzy rough entropy to detect anomalies},
+    author = {Sihan Wang and Zhong Yuan and Chuan Luo and Hongmei Chen and Dezhong Peng},
+    journal = {International Journal of Approximate Reasoning},
+    pages = {109087},
+    year = {2023},
+    doi = {https://doi.org/10.1016/j.ijar.2023.109087}
+}
+```
+## Contact
+If you have any question, please contact [yuanzhong@scu.edu.cn](yuanzhong@scu.edu.cn).
+
