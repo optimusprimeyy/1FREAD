@@ -1,5 +1,7 @@
 # Fuzzy Rough Entropy-based Anomaly Detection (FREAD) algorithm
-
+# Please refer to the following papers:
+# Exploiting fuzzy rough entropy to detect anomalies, International Journal of Approximate Reasoning, 2023.
+# Uploaded by Sihan Wang on Nov. 23, 2023. E-mail:wangsihan0713@foxmail.com.
 import numpy as np
 from scipy.io import loadmat
 from sklearn.metrics.pairwise import pairwise_distances
