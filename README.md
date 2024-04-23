@@ -44,5 +44,5 @@ If you find FREAD useful in your research, please consider citing:
 }
 ```
 ## Contact
-If you have any question, please contact [wangsihan0713@foxmail.com](wangsihan0713@foxmail.com).
+If you have any questions, please contact wangsihan0713@foxmail.com or yuanzhong@scu.edu.cn.
 
