@@ -97,7 +97,7 @@ def FREAD(data, delta):
 
             H_as_x[i, j] = sum((1 / (n - 1)) * np.log2(np.sum(R_B_te, axis=1)))
 
-    # step3：计算异常分数
+    # step3：Calculate the anomaly scores.
 
     H_x = H_x[:, e_as]  # Sort by entropy
     H = H[e_as]  # Sort by entropy
